@@ -34,3 +34,8 @@ optional arguments:
 * **m3u8**: <https://github.com/globocom/m3u8> - Python m3u8 parser.
 
 * **ffmpeg**: <https://ffmpeg.org/> - Used to download, convert and merge the downloaded ts files.
+
+## Dick
+1. use chrome to search m3u8 from the video
+2. python m3u8_downloader.py  https://baikevideo.cdn.bcebos.com/media/mda-OgJZ5meZEwxyMv5u/e5ee1c791e1ec62761cdf1a852435611.m3u8
+3. get the file from current folder
