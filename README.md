@@ -39,3 +39,9 @@ optional arguments:
 1. use chrome to search m3u8 from the video
 2. python m3u8_downloader.py  https://baikevideo.cdn.bcebos.com/media/mda-OgJZ5meZEwxyMv5u/e5ee1c791e1ec62761cdf1a852435611.m3u8
 3. get the file from current folder
+4. convert the file into mp4
+# full
+ffmpeg -i output.ts -bsf:a aac_adtstoasc -acodec copy -vcodec copy video.mp4
+
+# cut from 23 ~ 44 s
+ffmpeg -i output.ts -bsf:a aac_adtstoasc -acodec copy -vcodec copy -ss 00:00:23 -to 00:00:44 video.mp4
